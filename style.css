@@ -3,27 +3,43 @@
 /* 1. The title should have a font-size of 24px */
 .title {
     text-align: center; /* Error: Incorrect property name */
-    font-size: 42px; /* Error: Incorrect font size */
+    font-size: 24px; /* Error: Incorrect font size */
 }
 
 /* 2. The image of Pikachu should have a width of 200px */
 .pikachu-img {
-    width: 20px;
+
 }
 
 /* 3. Something is off with our selector. */
-pokemon-list {
-    list-style-type: none;
+.pokemon-list{
+list-style-type: none;
+        padding: 0;
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-around;
+}
+li{
+     text-align: center;
+        width: 300px;
+        border: 3px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        transition: transform 0.1s ease-in-out;
+}
+li:hover{
+    transform:scale(1.05)
 }
 
 /* 4. The link to the Pokémon Website should have a text color of blue */
 .pokemon-link {
     font-weight: bold; 
-    background-color: red;
+    color: blue;
 }
 
 /* 5. Something is off with our selector. */
-.pikachuparagraph {
+.pikachu-paragraph {
     color: yellow;
     font-style: italic;
 }
+
